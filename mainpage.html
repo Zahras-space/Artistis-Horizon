@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.png">
+      
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+        <title>Artists Horizon</title>
+    </head>
+
+
+ <style>
+
+ul {
+  color:white;
+  list-style-type: none;
+  margin-left: 0px;
+  padding-top: 0px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+
+
+li, a {
+  color:white;
+  display:inline-block;
+  color: rgb(237, 233, 233);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+}
+.hover-line::after {
+ 
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  color:white;
+  background-color:white; 
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-line:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.hover-line{
+  color:white;
+    margin-top: 10px;
+
+}
+
+.wrapper .icon{
+  display: inline-block;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 22px;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+.wrapper{
+  padding-left: 134px;
+  vertical-align: top;
+}
+.topbartext{
+  color:white;
+  display: inline-block;
+  padding-left: 351px;
+  vertical-align: top;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.topbar{
+  color:white;
+  margin-top: 0;
+  height: 700px;
+  background-image: url(art.gif);
+  background-repeat: no-repeat;
+ background-size: 100%;
+}
+
+.headline{
+  color:white;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 190px;
+  font-family: 'Cormorant Garamond', serif;
+  cursor:pointer;
+  margin-left:8px;
+  transition: font-size 1s;
+  transition: padding-left 1s, padding-bottom 1s, padding-right 1s, padding-top 1s  underline 0.8s;
+}
+.headline:hover{
+ padding-left: 26px;
+padding-right: 26px;
+padding-bottom: 20px;
+ font-size: 80px;
+ transform-origin: bottom-right;
+
+}
+.images{
+  display: inline-block;
+  position: relative;
+  height:487px;
+  width: 568px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.images:hover{
+
+}
+.dash-image{
+  position: relative;
+  display: inline-block;
+  height: 436px;
+  padding-left: 0px;
+  z-index:2;
+  width: 280px;
+}
+.dash-image2{
+  position: absolute;
+  padding-top:86px;
+  height: 400px;
+  padding-left: 0px;
+  margin-left: -36px;
+  z-index: 1;
+}
+
+.home{
+  margin-left: 571px;
+  width:188px;
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.home::after {
+ content: '';
+ position: absolute;
+ width: 100%;
+ transform: scaleX(0);
+ height: 2px;
+ bottom: 0;
+ left: 0;
+ background-color:rgb(0, 0, 0); 
+ transform-origin: bottom right;
+ transition: transform 0.25s ease-out;
+}
+.home:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.display-text{
+  margin-top: 100px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 70px;
+  display:inline-block;
+  width:0;
+  margin-left: 100px;
+}
+.foot{
+  background-color: rgba(120, 118, 118, 0.282);
+  height: 200px;
+  margin-top: 100px;
+  font-size: 30px;
+  text-align: center;
+  color: #1c1b1bb5;
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+
+</style>
+</head>
+<body>
+ <div class="topbar">
+<ul>
+  <div class="topbartext">
+  <li class="hover-line"><a href="mainpage.html" style="color:white;">Home</a></li>
+  <li class="hover-line"><a href="categories.html"color:white;">Categories</a></li>
+  <li class="hover-line"><a href="multiple artist page.html" style="color:white;">Gallery</a></li>
+
+
+</div>
+  <li class="btn">
+    <div class="wrapper">
+      <a href="https://web.facebook.com/" class="icon facebook">
+              
+        <span><i class="fab fa-facebook-f"></i></span>
+      </a>
+      <a href="https://twitter.com/?lang=en" class="icon twitter">
+        
+        <span><i class="fab fa-twitter"></i></span>
+      </a>
+      <a href="https://www.instagram.com/" class="icon instagram">
+       
+        <span><i class="fab fa-instagram"></i></span>
+      </a>
+      <a href="https://www.youtube.com/" class="icon youtube">
+       
+        <span><i class="fab fa-youtube"></i></span>
+      </a>
+  </div></li>
+</ul>
+<div class="headline">
+  Enjoy and Appreciate some Art!
+</div>
+</div>
+<div>
+      <div >
+       <h2> <a class="home" href="mainpage.html" style="color:rgb(5, 2, 2);">Home</a></h2>
+      </div>
+    <div class="images">
+      <img class="dash-image" src="cre_ 清新bot.jpg">
+      <img class="dash-image2" src="Single-Subject Aesthetics.jpg">
+    </div>
+    <div class="display-text">"Art is never finished, only abandoned"</div>
+</div>
+<footer class="foot">Copyrights. All rights are reserved to @TheGoldenTrio
+</footer>
+    </body>
+</html>

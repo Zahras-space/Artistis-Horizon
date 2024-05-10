@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="navbarstyle.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png">
+  
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+.container{
+    width: 100%;
+    height: 170px; 
+}
+
+.foot{
+  background-color: rgba(120, 118, 118, 0.282);
+  height: 200px;
+  margin-top: 100px;
+  font-size: 30px;
+  text-align: center;
+  color: #1c1b1bb5;
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.lowercontainer{
+
+    width: 100%;
+    height:480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: antiquewhite;
+}
+
+
+.space{
+    width: 100%;
+        height: 64vh;
+        font-family: 'roboto',sans-serif;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+}
+.card{
+        width: 240px;
+        height: 400px;
+        border-radius: 20px;
+        overflow: hidden;
+        border:1px solid rgb(253, 252, 252);
+         position: relative;
+    }
+.card-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius:8px ;
+    }
+.card-body{
+        width: 84%;
+        height: 93%;
+        border-radius:10px ;
+        top: 0;
+        right: -100%;
+        position:absolute;
+        background: rgba(167, 37, 139, 0.266);
+        backdrop-filter: blur(7px);
+        color: antiquewhite;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 2s;
+    }
+.card:hover .card-body{
+    right: 0;
+    }
+.card-title{
+    text-transform: uppercase;
+    font-size: 20px;
+    }
+.card-sub-title{
+        text-transform: capitalize;
+        font-size: 12px;
+        font-weight: 200;
+    }
+.card-info{
+        font-size: 16px;
+        line-height: 25px;
+        margin: 40px 0;
+        font-weight: 400;
+    }
+.card-btn{
+    width: 180px;
+    color: rgb(250, 248, 250);
+    background-color: rgba(84, 7, 109, 0.696);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+button:active{
+    transform: scale(0.96);
+}
+.fa-brands fa-square-instagram{
+aspect-ratio: 14px;
+
+}
+.home{
+    width: 300px;
+    margin-top: 90px;
+    line-height: 50px;
+  
+}
+.downtext{
+    margin-left: 400px;
+}
+.headline{
+  color:rgb(255, 255, 255);
+  font-size: 90px;
+  text-align: center;
+  margin-top: 190px;
+  font-family: 'Cormorant Garamond', serif;
+  cursor:pointer;
+  margin-left:5px;
+  transition: font-size 1s;
+  
+  transition: padding-left 1s, padding-bottom 1s, padding-right 1s, padding-top 1s  underline 0.8s;
+}
+.headline:hover{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 70px;
+    font-size: 100px;
+    transform-origin: bottom-right;
+
+}
+.topbartext{
+  color:white;
+  display: inline-block;
+  padding-left: 351px;
+  vertical-align: top;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.photographers-gallery{
+    margin-top: 100px;
+}
+.sketchers-gallery{
+    margin-top: 100px;
+}
+
+</style>
+</head>
+<body >
+ 
+    <div class="topbar">
+        <ul>
+          <div class="topbartext">
+          <li class="hover-line"><a href="mainpage.html" style="color:white;">Home</a></li>
+          <li class="hover-line"><a href="categories.html" style="color:white;">Categories</a></li>
+          <li class="hover-line"><a href="multiple artist page.html" style="color:white;">Gallery</a></li>
+        
+        
+        </div>
+       
+          <li class="btn">
+            <div class="wrapper">
+            <a href="https://web.facebook.com/" class="icon facebook">
+              
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="https://twitter.com/?lang=en" class="icon twitter">
+              
+              <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="https://www.instagram.com/" class="icon instagram">
+             
+              <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="https://www.youtube.com/" class="icon youtube">
+             
+              <span><i class="fab fa-youtube"></i></span>
+            </a>
+          </div></li>
+        </ul>
+        <div class="headline">
+         <i>Gallery</i>
+        </div>
+        </div>
+      <div>
+              <div class="head">
+                <a class="home" href="categories.html" style="color:rgb(5, 2, 2);">Our Artists</a>
+                <p class="downtext">Every artist dips his brush in his own soul, and paints his own nature into his pictures </p>
+              </div>
+    <div class="lowercontainer">
+     <div class="space">
+        <div class="card">
+            <img src="aishadp.PNG" class="card-img">
+            <div class="card-body">
+                <h1 class="card-title">Aisha </h1>
+                <p class="card-sub-title">Student at COMSATS</p>
+                <p class="card-info">Driven Art Student with significant academic experience studying fine art and creating original and thought-provoting pieces. </p>
+                <a href="photo2.html"><button class="card-btn">Portfolio Tour</button></a>
+                <a  target="blank" href="https://www.instagram.com/aisharts__/?igshid=YmMyMTA2M2Y%3D">
+                <i class="fa-brands fa-instagram fa-beat" style="color: #790599;"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="space">
+        <div class="card">
+            <img src="2ndcover-pic.jpg" class="card-img">
+            <div class="card-body">
+                <h1 class="card-title">Saleha Ahmed</h1>
+                <p class="card-sub-title">Student at NCA</p>
+                <p class="card-info"> A self motivated art student seeking challenging oppertunities in the art field for advancement and self development.</p>
+               <a href="photo4.html"></a> <button class="card-btn">Portfolio Tour</button>
+                <a  target="blank" href="https://www.instagram.com/saleha_ahmad1/?igshid=YmMyMTA2M2Y%3D">
+                    <i class="fa-brands fa-instagram fa-beat" style="color: #790599;"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="space">
+        <div class="card">
+            <img src="osamadp.jpeg" class="card-img">
+            <div class="card-body">
+                <h1 class="card-title">Osama Rafi</h1>
+                <p class="card-sub-title">Student at NCA</p>
+                <p class="card-info">Have a strong desire to create in a visual form as she is driven by ideas, imagination, humour or personal experience. </p>
+               <a href="photo9.html"><button class="card-btn">Portfolio Tour</button></a> 
+                <a  target="blank" href="https://www.instagram.com/osama_rafi_artist/?igshid=YmMyMTA2M2Y%3D">
+                    <i class="fa-brands fa-instagram fa-beat" style="color: #790599;"></i>
+                </a>
+            </div>
+        </div>
+     </div>
+</div>
+
+<div class="photographers-gallery">
+    <div class="lowercontainer">
+        <div class="space">
+           <div class="card">
+               <img src="mahaddp.PNG" class="card-img">
+               <div class="card-body">
+                   <h1 class="card-title">Mahad Ali</h1>
+                   <p class="card-sub-title">Student at COMSATS Atd.</p>
+                   <p class="card-info">Exprienced and innovative photographer.Skill behind the camera is exceptional, and the ability to evoke emotions through your photos is truly remarkable.  </p>
+                   <a href="photo1.html"><button class="card-btn">Portfolio Tour</button></a>
+                   <a  target="blank" href="https://www.instagram.com/photography_by_mahad/?igshid=YmMyMTA2M2Y%3D"></a>
+                   <i class="fa-brands fa-instagram fa-beat" style="color: #790599;"></i>
+                   </a>
+               </div>
+           </div>
+       </div>
+       
+   
+       <div class="space">
+           <div class="card">
+               <img src="yousafdp.PNG" class="card-img">
+               <div class="card-body">
+                   <h1 class="card-title">Yousaf Khan</h1>
+                   <p class="card-sub-title">Student at COMSATS Atd.</p>
+                   <p class="card-info"> Photos have such a unique and creative perspective, it's inspiring. If your pictures aren't good enough, you're not close enough.</p>
+                 <a href="phot03.html"> <button class="card-btn">Portfolio Tour</button></a> 
+                   <a  target="blank" href="https://www.instagram.com/yousafkhan_11/?igshid=YmMyMTA2M2Y%3D">
+                       <i class="fa-brands fa-instagram fa-beat" style="color: #790599;"></i>
+                   </a>
+               </div>
+           </div>
+       </div>
+   
+       <div class="space">
+           <div class="card">
+               <img src="ahsandp.jpg" class="card-img">
+               <div class="card-body">
+                   <h1 class="card-title">Ahsan Khan</h1>
+                   <p class="card-sub-title">Student at COMSATS Atd.</p>
+                   <p class="card-info">The best thing about a picture is that it never changes, even when the people in it do. </p>
+                   <a href="phot05.html"><button class="card-btn">Portfolio Tour</button></a>
+                   <a  target="blank" href="https://www.instagram.com/ahsartist/?igshid=YmMyMTA2M2Y%3D">
+                       <i class="fa-brands fa-instagram fa-beat" style="color: #790599;"></i>
+                   </a>
+               </div>
+           </div>
+        </div>
+   </div>
+   
+</div>
+
+<div class="sketchers-gallery">
+    <div class="lowercontainer">
+   
+       <div class="space">
+           <div class="card">
+               <img src="duadp.PNG" class="card-img">
+               <div class="card-body">
+                   <h1 class="card-title">Dua Ejaz</h1>
+                   <p class="card-sub-title"></p>
+                   <p class="card-info"> We created of art and for art "Everything that exists is official and designed".</p>
+                   <a href="photo7.html"><button class="card-btn">Portfolio Tour</button></a>
+                   <a  target="blank" href="https://instagram.com/ahmedelshadid0?igshid=MmU2YjMzNjRlOQ==">
+                       <i class="fa-brands fa-instagram fa-beat" style="color: #790599;"></i>
+                   </a>
+               </div>
+           </div>
+       </div>
+   
+       <div class="space">
+           <div class="card">
+               <img src="lailadp.PNG" class="card-img">
+               <div class="card-body">
+                   <h1 class="card-title">Laila</h1>
+                   <p class="card-sub-title">Student at NUMS</p>
+                   <p class="card-info">Artist are not born they are being created. </p>
+                   <a href="photo8.html"><button class="card-btn">Portfolio Tour</button></a>
+                   <a  target="blank" href="https://www.instagram.com/laila_calligraphy4412/?igshid=YmMyMTA2M2Y%3D">
+                       <i class="fa-brands fa-instagram fa-beat" style="color: #790599;"></i>
+                   </a>
+               </div>
+           </div>
+        </div>
+   </div>
+</div>
+<footer class="foot">Copyrights. All rights are reserved to @TheGoldenTrio
+</footer>
+</body>
+</html>

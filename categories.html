@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+</head>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">    
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500i,700|Roboto:300,400,500,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/vendor/icomoon/style.css">
+        <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/vendor/aos.css">
+        <link rel="stylesheet" href="css/vendor/animate.min.css">
+        <link rel="stylesheet" href="css/vendor/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+    
+        <title>Artists Horizon</title>
+    </head>
+
+
+ <style>
+
+ul {
+  color:white;
+  list-style-type: none;
+  margin-left: 0px;
+  padding-top: 0px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+
+
+li, a {
+  color:white;
+  display:inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+}
+.hover-line::after {
+ 
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  color:white;
+  background-color:white; 
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-line:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.hover-line{
+  color:white;
+    margin-top: 10px;
+
+}
+
+.wrapper .icon{
+  display: inline-block;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 22px;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+.wrapper{
+  padding-left: 134px;
+  vertical-align: top;
+}
+.topbartext{
+  color:white;
+  display: inline-block;
+  padding-left: 351px;
+  vertical-align: top;
+  font-size: 24px;
+ 
+font-family: 'Roboto';
+}
+.topbar{
+  color:white;
+  margin-top: 0;
+  height: 700px;
+  background-image: url(Teun\ van\ der\ Zalm\ GIF\ -\ Find\ &\ Share\ on\ GIPHY.gif);
+  background-repeat: no-repeat;
+ background-size: 100%;
+}
+
+.headline{
+  color:black;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 190px;
+  font-family: 'Cormorant Garamond', serif;
+  cursor:pointer;
+  margin-left:8px;
+  transition: font-size 1s;
+  
+  transition: padding-left 1s, padding-bottom 1s, padding-right 1s, padding-top 1s  underline 0.8s;
+}
+.headline:hover{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 70px;
+    font-size: 100px;
+    transform-origin: bottom-right;
+
+}
+.images{
+  display: inline-block;
+  position: relative;
+  height: 363px;
+  width: 642px;
+  margin-right: 0px;
+  margin-left: -6px;
+}
+
+.dash-image{
+  margin-top: 30px;
+  position: relative;
+  display: inline-block;
+  height: 300px;
+ margin-left: 0px;
+  z-index:2;
+  width: 640px;
+  padding-top: 20px;
+}
+.dash-image {
+  transition: transform 2s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(50%);
+}
+
+.dash-image:hover{
+  filter: brightness(100%);
+  transform: scale(1.3);
+}
+.dash-image2{
+  position: absolute;
+  width:400px;
+  object-fit: cover;
+  padding-top:127px;
+  height: 277px;
+  padding-left: 0px;
+  margin-left: -117px;
+  z-index: 1;
+}
+
+
+
+.home{
+    margin-left: 480px;
+  width:400px;
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Cormorant Garamond';
+}
+
+.home::after {
+ content: '';
+ position: absolute;
+ width: 100%;
+ transform: scaleX(0);
+ height: 2px;
+ bottom: 0;
+ left: 0;
+ background-color:rgb(0, 0, 0); 
+ transform-origin: bottom right;
+ transition: transform 0.25s ease-out;
+}
+.home:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.display-text{
+display: inline-block;
+vertical-align: top;
+margin-top: 60px;
+font-size: 60px;
+font-family: 'Cormorant Garamond', serif;
+text-decoration: none;
+margin-left: 100px;
+}
+.foot{
+  background-color: rgba(120, 118, 118, 0.282);
+  height: 200px;
+  margin-top: 300px;
+  font-size: 30px;
+  text-align: center;
+  color: #1c1b1bb5;
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.head{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.downtext{
+color:rgb(112, 112, 112);
+display:inline-block;
+width: 500px;
+margin-left:450px;
+font-family: Roboto, sans-serif;
+font-size :16px;
+font-weight: 300;
+text-align: center;
+}
+.downtext2{
+color:rgb(112, 112, 112);
+display:inline-block;
+line-height: 20px;
+font-family: Roboto, sans-serif;
+font-size :18px;
+font-weight: bold;
+margin-left: 100px;
+}
+
+.column{
+    display: inline-block;
+    width:600px;
+    
+    
+}
+.sidebar{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.downtext3{
+  font-size: 15px;
+  width:360px;
+  font-family: "Roboto", sans-serif;
+  color:rgb(112, 112, 112);
+  margin-left: 100px;
+  line-height: 28px;
+  margin-top:20px;
+}
+
+.photo{
+  height: 380px;
+  width:660px;
+  object-fit: cover;
+}
+.photo2{
+  height: 380px;
+  width:640px;
+  object-fit: cover;
+}
+.photograph{
+  height: 487px;
+  width:342px;
+  object-fit: contain;
+  padding-left: 20px;
+}
+
+.phototext{
+  margin-top: 23px;
+  width:500px;
+  margin-left:50px;
+  margin-right: 40px;
+  
+}
+.sidebar-photo{
+  padding-left: 100px;
+}
+</style>
+</head>
+
+<body>
+  <div class="untree_co--site-wrap">
+
+    <nav class="untree_co--site-nav js-sticky-nav">
+      <div class="container d-flex align-items-center">
+        <div class="logo-wrap">
+          <a href="frontpage.html" class="untree_co--site-logo">Get Your Aesthetic Enjoyment</a>
+        </div>
+        <div class="site-nav-ul-wrap text-center d-none d-lg-block">
+          <ul class="site-nav-ul js-clone-nav">
+            <li><a href="frontpage.html">Home</a></li>
+            <li class="has-children active">
+              <a href="categories.html">Categories</a>
+              <ul class="dropdown">
+              
+                <li>
+                  <a href="#">Painters </a>
+                </li>
+                <li>
+                  <a href="#">Sketchers </a>
+                </li>
+                <li>
+                  <a href="#">Photographers</a>
+                </li>
+              </ul>
+            </li>
+            
+            <li><a href="gallery.html">Gallery</a></li>
+            
+            
+          </ul>
+        </div>
+        <div class="icons-wrap text-md-right">
+
+          <ul class="icons-top d-none d-lg-block">
+            <li>
+              <a href="#"><span class="icon-facebook"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon-twitter"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon-instagram"></span></a>
+            </li>
+          </ul>
+          <a href="#" class="d-block d-lg-none burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="untree_co--site-main">
+      
+      <div class="untree_co--site-hero inner-page" style="background-image: url('Teun\ van\ der\ Zalm\ GIF\ -\ Find\ &\ Share\ on\ GIPHY.gif')">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-7 text-center">
+              <div class="site-hero-contents" data-aos="fade-up">
+                <h1 class="hero-heading text-black">Categories....</h1>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="untree_co--site-section pb-0">
+        <div class="container-fluid px-md-0">
+
+          <div class="row justify-content-center text-center site-section pt-0">
+            <div class="col-md-6">
+              <h2 class="display-4" data-aos="fade-up">Get Your Art</h2>
+              <p data-aos="fade-up" data-aos-delay="100">The aim of art is not to represent the outward appearance of things, but their inward significance </p>
+            </div>
+          </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+  
+
+
+        <div class="container-fluid px-md-0">
+          <div class="row no-gutters align-items-stretch room-animate site-section">
+            <div class="col-md-7 order-md-2 img-wrap" data-jarallax-element="-100">
+              
+              <div class="bg-image h-100" style="background-color: #efefef; background-image: url('image.jpg');"></div>
+              
+            </div>
+            <div class="col-md-5">
+              <div class="row justify-content-center">
+                <div class="col-md-8 py-5">
+                  <h3 class="display-4 heading">Painters</h3>
+                  <div class="room-exerpt">
+                    
+                    <p><b>Painting is just another way of keeping diary</b> </p>
+
+                    <p>In our website, we have added different profiles of painters from COMSATS University Islamabad, Abbottabad Campus. This will show you the hidden talent of our fellows.</p>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid px-md-0">
+
+          <div class="row no-gutters align-items-stretch room-animate site-section">
+            <div class="col-md-7 img-wrap" data-jarallax-element="-100">
+              
+              <div class="bg-image h-100" style="background-color: #efefef; background-image: url('sketch.jpg');"></div>
+              
+            </div>
+            <div class="col-md-5">
+              <div class="row justify-content-center">
+                <div class="col-md-8 py-5">
+                  <h3 class="display-4 heading">Sketchers</h3>
+                  <div class="room-exerpt">
+                    
+                    <p><b>Being a part of SKECHERS is exciting. It is such a hip company with a great attitude and image</b> </p>
+                    <p>In our website, we have added different profiles of Sketchers from COMSATS University Islamabad, Abbottabad Campus. This will show you the hidden talent of our fellows. </p>
+
+         
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container-fluid px-md-0">
+          <div class="row no-gutters align-items-stretch room-animate site-section pb-0">
+            <div class="col-md-7 order-md-2 img-wrap" data-jarallax-element="-100">
+              <div class="bg-image h-100" style="background-color: #efefef; background-image: url('photography.jpg');"></div>
+            </div>
+            <div class="col-md-5">
+              <div class="row justify-content-center">
+                <div class="col-md-8 py-5">
+                  <h3 class="display-4 heading">Photographers</h3>
+                  <div class="room-exerpt">
+                    
+                    <p><b>The best thing about photographs is that they capture a moment that’s gone forever, impossible to reproduce.</b> </p>
+
+                    <p>In our website, we have added different profiles of Photographers from COMSATS University Islamabad, Abbottabad Campus. This will show you the hidden talent of our fellows. </p>
+
+     
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="untree_co--site-section py-5 bg-body-darker cta">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              © 2023 Copyright:
+              <a class="text-reset fw-bold" href="#">The Golden Trio</a>
+              <h3 class="m-0 p-0">If you have any special requests, please feel free to contact us. </h3>
+              <h3><a href="email:nayab123.nz@gmail.com">nayab123.nz@gmail.com</a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+    
+  </div>
+  <!-- Search -->
+  <div class="search-wrap">
+    <a href="#" class="close-search js-search-toggle">
+      <span>Close</span>
+    </a>
+    <div class="container">
+      <div class="row justify-content-center align-items-center text-center">
+        <div class="col-md-12">
+          <form action="#">
+            <input type="search" name="s" id="s" placeholder="Type a keyword and hit enter..."  autocomplete="false">
+          </form>    
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="js/vendor/popper.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/owl.carousel.min.js"></script>
+  <script src="js/vendor/jarallax.min.js"></script>
+  <script src="js/vendor/jarallax-element.min.js"></script>
+  <script src="js/vendor/ofi.min.js"></script>
+  <script src="js/vendor/aos.js"></script>
+  <script src="js/vendor/jquery.lettering.js"></script>
+  <script src="js/vendor/jquery.sticky.js"></script>
+  <script src="js/vendor/TweenMax.min.js"></script>
+  <script src="js/vendor/ScrollMagic.min.js"></script>
+  <script src="js/vendor/scrollmagic.animation.gsap.min.js"></script>
+  <script src="js/vendor/debug.addIndicators.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

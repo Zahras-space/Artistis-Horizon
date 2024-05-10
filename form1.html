@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>form</title>
+    <style>
+        *{
+    font-family:'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    line-height: 3;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+   height:900px;
+    background: linear-gradient(90deg,rgb(214, 174, 214) 60%,#f5a9d3 40.1%);
+    padding-bottom: 70px;
+}
+
+.container form{
+    padding: 50px;
+    height: 380px;
+    width: 700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1)
+}
+.container form, .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    height: 835px;
+}
+.container form .row .col{
+    flex: 1 1 250px;
+}
+
+button{
+background-color: rgb(238, 182, 249);
+color: white;
+border:none;
+height:36px;
+width:80px;
+margin-left:260px;
+border-radius:18px;
+font-weight:bold;
+font-size:15px;
+cursor:pointer;
+transition: box-shadow 0.15s;
+vertical-align: top;
+}
+button:hover{
+box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+button:active{
+opacity: 0.3;
+}
+    </style>
+</head>
+<body>
+     
+<div class="container">
+
+    <form action="">
+        
+        <div class="row">
+
+            <div class="col">
+               <h3 class="tittle">billing address</h3>
+               
+               <div class="inputbox">
+                     <span>full name :</span>
+                     <input type="text" placeholder="________________">
+               </div>
+               <div class="inputbox">
+                   <span>email :</span>
+                   <input type="email" placeholder="________________">
+               </div>
+               <div class="inputbox">
+                   <span>address :</span>
+                   <input type="text" placeholder="________________">
+               </div>
+               <div class="inputbox">
+                   <span>city :</span>
+                   <input type="text" placeholder="________________">
+               </div>
+               
+               <div class="flex">
+                   <div class="inputbox">
+                       <span>state :</span>
+                       <input type="text" placeholder="________________"
+                       >
+                 </div>
+                 <div class="inputbox">
+                   <span>zip code :</span>
+                   <input type="text" placeholder="________________">
+               </div>
+               <!-- second part -->
+               <h3 class="tittle">payment</h3>
+               <div class="inputbox">
+                   <span>cards accepted :</span>
+                  <input type="text" placeholder="________________">
+               </div>
+               <div class="inputbox">
+                     <span>name on card :</span>
+                     <input type="text" placeholder="________________">
+               </div>
+               
+               <div class="inputbox">
+                   <span>credit card number :</span>
+                   <input type="number" placeholder="________________">
+               </div>
+               <div class="inputbox">
+                   <span>exp month :</span>
+                   <input type="text" placeholder="________________">
+               </div>
+               
+               <div class="flex">
+                   <div class="inputbox">
+                       <span>exp year :</span>
+                       <input type="number" placeholder="________________">
+                 </div>
+                 <div class="inputbox">
+                   <span>cvv :</span>
+                   <input type="text" placeholder="________________">
+               </div>
+               <div>
+              <a  href="c:\Users\Yousuf Traders\Desktop\webassignment1\lab assi1\mainpage.html"><button>Purchase</button></a> 
+            </div>
+       
+            </div>
+   
+       </div>
+   
+   </div>
+    </form>
+
+
+    
+</body>
+</html>
